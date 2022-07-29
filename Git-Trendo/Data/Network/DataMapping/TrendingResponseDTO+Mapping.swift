@@ -11,9 +11,11 @@ import Foundation
 
 struct TrendingResponseDTO: Decodable {
     let reposArray: [RepoDTO]
+    let totalCount: Int
 
     private enum CodingKeys: String, CodingKey {
         case reposArray = "items"
+        case totalCount = "total_count"
     }
 }
 
@@ -50,7 +52,8 @@ extension TrendingResponseDTO {
 
 extension TrendingResponseDTO {
     func toDomain() -> TrendingRepos {
-        return .init(reposArray: reposArray.map { $0.toDomain()})
+        return .init(totalCount: totalCount,
+                     reposArray: reposArray.map { $0.toDomain()})
     }
 }
 

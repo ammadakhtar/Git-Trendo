@@ -8,5 +8,6 @@
 import Foundation
 
 struct TrendingRepos {
+    let totalCount: Int
     let reposArray: [Repo]
 }
