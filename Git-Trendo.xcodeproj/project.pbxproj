@@ -40,6 +40,8 @@
 		6CEF8AAC2894147D00486E42 /* TrendingReposListFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8AAB2894147D00486E42 /* TrendingReposListFlow.swift */; };
 		6CEF8AAE289415B200486E42 /* AppConfigurations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8AAD289415B200486E42 /* AppConfigurations.swift */; };
 		6CEF8AB02894178900486E42 /* TrendingReposSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8AAF2894178900486E42 /* TrendingReposSceneDIContainer.swift */; };
+		6CEF8AB42894248A00486E42 /* TrendingRepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8AB22894248A00486E42 /* TrendingRepositoryTableViewCell.swift */; };
+		6CEF8AB52894248A00486E42 /* TrendingRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF8AB32894248A00486E42 /* TrendingRepositoryTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -97,6 +99,8 @@
 		6CEF8AAB2894147D00486E42 /* TrendingReposListFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingReposListFlow.swift; sourceTree = "<group>"; };
 		6CEF8AAD289415B200486E42 /* AppConfigurations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfigurations.swift; sourceTree = "<group>"; };
 		6CEF8AAF2894178900486E42 /* TrendingReposSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingReposSceneDIContainer.swift; sourceTree = "<group>"; };
+		6CEF8AB22894248A00486E42 /* TrendingRepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		6CEF8AB32894248A00486E42 /* TrendingRepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingRepositoryTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -385,6 +389,7 @@
 		6CEF8AA52894125100486E42 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				6CEF8AB12894246700486E42 /* Cells */,
 				6CEF8AA62894126F00486E42 /* TrendingRepoListViewController.swift */,
 				6CEF8AA72894126F00486E42 /* TrendingRepoListViewController.xib */,
 			);
@@ -397,6 +402,15 @@
 				6CEF8AAB2894147D00486E42 /* TrendingReposListFlow.swift */,
 			);
 			path = Flows;
+			sourceTree = "<group>";
+		};
+		6CEF8AB12894246700486E42 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8AB22894248A00486E42 /* TrendingRepositoryTableViewCell.swift */,
+				6CEF8AB32894248A00486E42 /* TrendingRepositoryTableViewCell.xib */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -505,6 +519,7 @@
 			files = (
 				6CEF8AA92894126F00486E42 /* TrendingRepoListViewController.xib in Resources */,
 				6CEF8A3F2893C08600486E42 /* LaunchScreen.storyboard in Resources */,
+				6CEF8AB52894248A00486E42 /* TrendingRepositoryTableViewCell.xib in Resources */,
 				6CEF8A3C2893C08600486E42 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +547,7 @@
 			files = (
 				6CEF8A742893C91500486E42 /* DataTransferService.swift in Sources */,
 				6CEF8A6E2893C2A000486E42 /* AppDIContainer.swift in Sources */,
+				6CEF8AB42894248A00486E42 /* TrendingRepositoryTableViewCell.swift in Sources */,
 				6CEF8A782893C94F00486E42 /* Endpoint.swift in Sources */,
 				6CEF8AA4289406B400486E42 /* ConnectionError.swift in Sources */,
 				6CEF8A332893C08500486E42 /* AppDelegate.swift in Sources */,

@@ -75,7 +75,7 @@ final class TrendingRepoListViewModel: MoviesListViewModelInput, MoviesListViewM
     // MARK: - Private Methods
 
     private func loadData() {
-        trendingRepoLoadTask = trendingRepositoriesUseCase.execute(requestvalue: .init(page: nextPage), loadFromCache: false) { [weak self] result in
+        trendingRepoLoadTask = trendingRepositoriesUseCase.execute(requestvalue: .init(page: nextPage), loadFromCache: loading.value == .firstPage ? false : true) { [weak self] result in
             guard let self = self else { return }
             switch result {
             case .success(let data):

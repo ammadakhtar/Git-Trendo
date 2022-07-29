@@ -9,9 +9,12 @@ import UIKit
 
 final class TrendingRepoListViewController: UIViewController {
 
-    // MARK: - Properties
+    // MARK: - IBOutlets and variables
+
+    @IBOutlet weak var trendingRepoTableView: UITableView!
 
     private let viewModel: TrendingRepoListViewModel
+    private let refreshControl = UIRefreshControl()
 
     // MARK: - LifeCycle Methods
 
@@ -26,11 +29,16 @@ final class TrendingRepoListViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        setupViews()
         bind(to: viewModel)
         viewModel.viewDidLoad()
     }
 
     // MARK: - Private Methods
+
+    private func setupViews() {
+        title = viewModel.screenTitle
+    }
 
     private func bind(to viewModel: TrendingRepoListViewModel) {
         viewModel.repos.observe(on: self) { [weak self] repos in
