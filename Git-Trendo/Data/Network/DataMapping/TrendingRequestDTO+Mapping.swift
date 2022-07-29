@@ -8,5 +8,5 @@
 import Foundation
 
 struct TrendingRequestDTO: Encodable {
-    let query: String
+  let page: Int
 }

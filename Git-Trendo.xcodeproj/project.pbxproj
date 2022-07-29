@@ -28,7 +28,6 @@
 		6CEF8A8A2893E4C700486E42 /* TrendingRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A892893E4C700486E42 /* TrendingRepositoryProtocol.swift */; };
 		6CEF8A8C2893E51B00486E42 /* Cancelable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A8B2893E51B00486E42 /* Cancelable.swift */; };
 		6CEF8A8F2893E63000486E42 /* FetchTrendingRepositoriesTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A8E2893E63000486E42 /* FetchTrendingRepositoriesTask.swift */; };
-		6CEF8A912893E84100486E42 /* TrendingRepoQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A902893E84100486E42 /* TrendingRepoQuery.swift */; };
 		6CEF8A932893E9E900486E42 /* TrendingRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A922893E9E900486E42 /* TrendingRequestDTO+Mapping.swift */; };
 		6CEF8A952893EA9200486E42 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A942893EA9200486E42 /* APIEndpoints.swift */; };
 		6CEF8A982893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A972893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift */; };
@@ -77,7 +76,6 @@
 		6CEF8A892893E4C700486E42 /* TrendingRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepositoryProtocol.swift; sourceTree = "<group>"; };
 		6CEF8A8B2893E51B00486E42 /* Cancelable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cancelable.swift; sourceTree = "<group>"; };
 		6CEF8A8E2893E63000486E42 /* FetchTrendingRepositoriesTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTrendingRepositoriesTask.swift; sourceTree = "<group>"; };
-		6CEF8A902893E84100486E42 /* TrendingRepoQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoQuery.swift; sourceTree = "<group>"; };
 		6CEF8A922893E9E900486E42 /* TrendingRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
 		6CEF8A942893EA9200486E42 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
 		6CEF8A972893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTrendingRepositoriesUseCase.swift; sourceTree = "<group>"; };
@@ -264,7 +262,6 @@
 			children = (
 				6CEF8A7C2893D48100486E42 /* Repo.swift */,
 				6CEF8A7E2893D4D100486E42 /* TrendingRepo.swift */,
-				6CEF8A902893E84100486E42 /* TrendingRepoQuery.swift */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -457,7 +454,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CEF8A912893E84100486E42 /* TrendingRepoQuery.swift in Sources */,
 				6CEF8A742893C91500486E42 /* DataTransferService.swift in Sources */,
 				6CEF8A6E2893C2A000486E42 /* AppDIContainer.swift in Sources */,
 				6CEF8A782893C94F00486E42 /* Endpoint.swift in Sources */,

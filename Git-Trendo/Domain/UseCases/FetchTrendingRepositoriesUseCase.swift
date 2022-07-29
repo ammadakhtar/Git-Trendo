@@ -8,7 +8,7 @@
 import Foundation
 
 protocol FetchTrendingRepositoryUseCaseProtocol: AnyObject {
-    func execute(requestvalue:FetchTrendingRepositoryUseCaseRequestValue,
+    func execute(requestvalue: FetchTrendingRepositoryUseCaseRequestValue,
                  loadFromCache: Bool,
                  completion: @escaping (Result<TrendingRepos, Error>) -> Void) -> Cancellable?
     }
@@ -26,12 +26,12 @@ final class FetchTrendingRepositoryUseCase: FetchTrendingRepositoryUseCaseProtoc
     func execute(requestvalue: FetchTrendingRepositoryUseCaseRequestValue,
                  loadFromCache: Bool,
                  completion: @escaping (Result<TrendingRepos, Error>) -> Void) -> Cancellable? {
-        return trendingRepository.fetchTrendingRepositories(query: requestvalue.query, loadFromCache: loadFromCache) { result in
+        return trendingRepository.fetchTrendingRepositories(page: requestvalue.page, loadFromCache: loadFromCache) { result in
             completion(result)
         }
     }
 }
 
 struct FetchTrendingRepositoryUseCaseRequestValue {
-    let query: TrendingRepoQuery
+    let page: Int
 }

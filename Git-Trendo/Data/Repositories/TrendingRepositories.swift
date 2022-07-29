@@ -17,11 +17,11 @@ final class TrendingRepositories: TrendingRepositoryProtocol {
 
     // MARK: - TrendingRepositoryProtocol
 
-    func fetchTrendingRepositories(query: TrendingRepoQuery,
+    func fetchTrendingRepositories(page: Int,
                                    loadFromCache: Bool,
                                    completion: @escaping (Result<TrendingRepos, Error>) -> Void) -> Cancellable? {
         let task = FetchTrendingRepositoriesTask()
-        let requestDTO = TrendingRequestDTO(query: query.query)
+        let requestDTO = TrendingRequestDTO(page: page)
 
         let endpoint = APIEndpoints.getTrendingRepositories(with: requestDTO)
         task.networkTask = dataTransferService.request(with: endpoint, loadFromCache: loadFromCache) { result in

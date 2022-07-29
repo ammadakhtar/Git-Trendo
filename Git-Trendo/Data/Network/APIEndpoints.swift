@@ -13,6 +13,13 @@ struct APIEndpoints {
 
         return Endpoint(path: "/search/repositories",
                         method: .get,
-                        queryParametersEncodable: trendingRequestDTO)
+                        headerParameters: [ // recommended on github docs 
+                            "Accept": "application/vnd.github.v3+json",
+                            "Content-Type": "application/json;charset=utf-8"
+                        ],
+                        queryParametersEncodable: trendingRequestDTO,
+                        queryParameters: [
+                            "q": "language=+sort:stars"
+                        ])
     }
 }
