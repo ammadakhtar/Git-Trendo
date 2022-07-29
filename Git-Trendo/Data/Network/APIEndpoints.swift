@@ -11,7 +11,7 @@ struct APIEndpoints {
 
     static func getTrendingRepositories(with trendingRequestDTO: TrendingRequestDTO) -> Endpoint<TrendingResponseDTO> {
 
-        return Endpoint(path: "/search/repositories",
+        return Endpoint(path: "search/repositories",
                         method: .get,
                         headerParameters: [ // recommended on github docs 
                             "Accept": "application/vnd.github.v3+json",

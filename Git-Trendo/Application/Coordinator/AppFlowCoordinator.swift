@@ -20,6 +20,9 @@ final class AppFlowCoordinator: Coordinator {
 
     // Starts the flow of the application
     func start() {
+        let trendingReposDIContainer = appDIContainer.makeTrendingRepoListDIContainer()
+        let trendingReposVIewController = trendingReposDIContainer.makeTrendingRepoListViewController()
+        navigationController.pushViewController(trendingReposVIewController, animated: true)
     }
 
     // pops ViewController

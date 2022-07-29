@@ -33,7 +33,7 @@ final class TrendingRepoListViewModel: MoviesListViewModelInput, MoviesListViewM
 
     var currentPage: Int = 0
     var totalPageCount: Int = 1
-    var hasMorePages: Bool { currentPage < totalPageCount }
+    var hasMorePages: Bool { repos.value.count < totalPageCount }
     var nextPage: Int { hasMorePages ? currentPage + 1 : currentPage }
 
     // MARK: - Init
