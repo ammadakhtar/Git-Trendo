@@ -5,4 +5,26 @@
 //  Created by Ammad Akhtar on 29/07/2022.
 //
 
-import Foundation
+import UIKit
+
+final class AppFlowCoordinator: Coordinator {
+
+    var navigationController: UINavigationController
+    var appDIContainer: AppDIContainer
+
+    init(navigationController: UINavigationController, appDIContainer: AppDIContainer) {
+        navigationController.isNavigationBarHidden = true
+        self.navigationController = navigationController
+        self.appDIContainer = appDIContainer
+    }
+
+    // Starts the flow of the application
+    func start() {
+    }
+
+    // pops ViewController
+    // we don't need this in the task but is written from a scaleable solution's point of view
+    func pop() {
+        navigationController.popViewController(animated: true)
+    }
+}

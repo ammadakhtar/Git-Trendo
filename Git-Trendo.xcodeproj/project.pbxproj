@@ -1,0 +1,679 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6CEF8A332893C08500486E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A322893C08500486E42 /* AppDelegate.swift */; };
+		6CEF8A352893C08500486E42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A342893C08500486E42 /* SceneDelegate.swift */; };
+		6CEF8A3C2893C08600486E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF8A3B2893C08600486E42 /* Assets.xcassets */; };
+		6CEF8A3F2893C08600486E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF8A3D2893C08600486E42 /* LaunchScreen.storyboard */; };
+		6CEF8A4A2893C08600486E42 /* Git_TrendoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A492893C08600486E42 /* Git_TrendoTests.swift */; };
+		6CEF8A542893C08600486E42 /* Git_TrendoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A532893C08600486E42 /* Git_TrendoUITests.swift */; };
+		6CEF8A562893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A552893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift */; };
+		6CEF8A6C2893C28F00486E42 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A6B2893C28F00486E42 /* Coordinator.swift */; };
+		6CEF8A6E2893C2A000486E42 /* AppDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A6D2893C2A000486E42 /* AppDIContainer.swift */; };
+		6CEF8A702893C2D200486E42 /* AppFlowCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A6F2893C2D200486E42 /* AppFlowCoordinator.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6CEF8A462893C08600486E42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CEF8A272893C08500486E42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CEF8A2E2893C08500486E42;
+			remoteInfo = "Git-Trendo";
+		};
+		6CEF8A502893C08600486E42 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6CEF8A272893C08500486E42 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6CEF8A2E2893C08500486E42;
+			remoteInfo = "Git-Trendo";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		6CEF8A2F2893C08500486E42 /* Git-Trendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git-Trendo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEF8A322893C08500486E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		6CEF8A342893C08500486E42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		6CEF8A3B2893C08600486E42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6CEF8A3E2893C08600486E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6CEF8A402893C08600486E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6CEF8A452893C08600486E42 /* Git-TrendoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Git-TrendoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEF8A492893C08600486E42 /* Git_TrendoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git_TrendoTests.swift; sourceTree = "<group>"; };
+		6CEF8A4F2893C08600486E42 /* Git-TrendoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Git-TrendoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CEF8A532893C08600486E42 /* Git_TrendoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git_TrendoUITests.swift; sourceTree = "<group>"; };
+		6CEF8A552893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git_TrendoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6CEF8A6B2893C28F00486E42 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		6CEF8A6D2893C2A000486E42 /* AppDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDIContainer.swift; sourceTree = "<group>"; };
+		6CEF8A6F2893C2D200486E42 /* AppFlowCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlowCoordinator.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		6CEF8A2C2893C08500486E42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CEF8A422893C08600486E42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CEF8A4C2893C08600486E42 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6CEF8A262893C08500486E42 = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A312893C08500486E42 /* Git-Trendo */,
+				6CEF8A482893C08600486E42 /* Git-TrendoTests */,
+				6CEF8A522893C08600486E42 /* Git-TrendoUITests */,
+				6CEF8A302893C08500486E42 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		6CEF8A302893C08500486E42 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A2F2893C08500486E42 /* Git-Trendo.app */,
+				6CEF8A452893C08600486E42 /* Git-TrendoTests.xctest */,
+				6CEF8A4F2893C08600486E42 /* Git-TrendoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		6CEF8A312893C08500486E42 /* Git-Trendo */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A622893C20700486E42 /* Application */,
+				6CEF8A632893C20F00486E42 /* Presentation */,
+				6CEF8A642893C21900486E42 /* Domain */,
+				6CEF8A652893C22000486E42 /* Data */,
+				6CEF8A662893C22500486E42 /* Infrastructure */,
+				6CEF8A672893C23100486E42 /* Common */,
+				6CEF8A712893C3BF00486E42 /* Resources */,
+				6CEF8A682893C23900486E42 /* LaunchScreen */,
+				6CEF8A402893C08600486E42 /* Info.plist */,
+			);
+			path = "Git-Trendo";
+			sourceTree = "<group>";
+		};
+		6CEF8A482893C08600486E42 /* Git-TrendoTests */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A492893C08600486E42 /* Git_TrendoTests.swift */,
+			);
+			path = "Git-TrendoTests";
+			sourceTree = "<group>";
+		};
+		6CEF8A522893C08600486E42 /* Git-TrendoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A532893C08600486E42 /* Git_TrendoUITests.swift */,
+				6CEF8A552893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift */,
+			);
+			path = "Git-TrendoUITests";
+			sourceTree = "<group>";
+		};
+		6CEF8A622893C20700486E42 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A322893C08500486E42 /* AppDelegate.swift */,
+				6CEF8A342893C08500486E42 /* SceneDelegate.swift */,
+				6CEF8A692893C26300486E42 /* Coordinator */,
+				6CEF8A6A2893C26D00486E42 /* DIContainer */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		6CEF8A632893C20F00486E42 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		6CEF8A642893C21900486E42 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		6CEF8A652893C22000486E42 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		6CEF8A662893C22500486E42 /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		6CEF8A672893C23100486E42 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		6CEF8A682893C23900486E42 /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A3D2893C08600486E42 /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		6CEF8A692893C26300486E42 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A6B2893C28F00486E42 /* Coordinator.swift */,
+				6CEF8A6F2893C2D200486E42 /* AppFlowCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		6CEF8A6A2893C26D00486E42 /* DIContainer */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A6D2893C2A000486E42 /* AppDIContainer.swift */,
+			);
+			path = DIContainer;
+			sourceTree = "<group>";
+		};
+		6CEF8A712893C3BF00486E42 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A3B2893C08600486E42 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6CEF8A2E2893C08500486E42 /* Git-Trendo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CEF8A592893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-Trendo" */;
+			buildPhases = (
+				6CEF8A2B2893C08500486E42 /* Sources */,
+				6CEF8A2C2893C08500486E42 /* Frameworks */,
+				6CEF8A2D2893C08500486E42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Git-Trendo";
+			productName = "Git-Trendo";
+			productReference = 6CEF8A2F2893C08500486E42 /* Git-Trendo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		6CEF8A442893C08600486E42 /* Git-TrendoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CEF8A5C2893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-TrendoTests" */;
+			buildPhases = (
+				6CEF8A412893C08600486E42 /* Sources */,
+				6CEF8A422893C08600486E42 /* Frameworks */,
+				6CEF8A432893C08600486E42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CEF8A472893C08600486E42 /* PBXTargetDependency */,
+			);
+			name = "Git-TrendoTests";
+			productName = "Git-TrendoTests";
+			productReference = 6CEF8A452893C08600486E42 /* Git-TrendoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		6CEF8A4E2893C08600486E42 /* Git-TrendoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6CEF8A5F2893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-TrendoUITests" */;
+			buildPhases = (
+				6CEF8A4B2893C08600486E42 /* Sources */,
+				6CEF8A4C2893C08600486E42 /* Frameworks */,
+				6CEF8A4D2893C08600486E42 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6CEF8A512893C08600486E42 /* PBXTargetDependency */,
+			);
+			name = "Git-TrendoUITests";
+			productName = "Git-TrendoUITests";
+			productReference = 6CEF8A4F2893C08600486E42 /* Git-TrendoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		6CEF8A272893C08500486E42 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					6CEF8A2E2893C08500486E42 = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+					6CEF8A442893C08600486E42 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 6CEF8A2E2893C08500486E42;
+					};
+					6CEF8A4E2893C08600486E42 = {
+						CreatedOnToolsVersion = 13.3.1;
+						TestTargetID = 6CEF8A2E2893C08500486E42;
+					};
+				};
+			};
+			buildConfigurationList = 6CEF8A2A2893C08500486E42 /* Build configuration list for PBXProject "Git-Trendo" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 6CEF8A262893C08500486E42;
+			productRefGroup = 6CEF8A302893C08500486E42 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				6CEF8A2E2893C08500486E42 /* Git-Trendo */,
+				6CEF8A442893C08600486E42 /* Git-TrendoTests */,
+				6CEF8A4E2893C08600486E42 /* Git-TrendoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		6CEF8A2D2893C08500486E42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CEF8A3F2893C08600486E42 /* LaunchScreen.storyboard in Resources */,
+				6CEF8A3C2893C08600486E42 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CEF8A432893C08600486E42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CEF8A4D2893C08600486E42 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		6CEF8A2B2893C08500486E42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CEF8A6E2893C2A000486E42 /* AppDIContainer.swift in Sources */,
+				6CEF8A332893C08500486E42 /* AppDelegate.swift in Sources */,
+				6CEF8A702893C2D200486E42 /* AppFlowCoordinator.swift in Sources */,
+				6CEF8A352893C08500486E42 /* SceneDelegate.swift in Sources */,
+				6CEF8A6C2893C28F00486E42 /* Coordinator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CEF8A412893C08600486E42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CEF8A4A2893C08600486E42 /* Git_TrendoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6CEF8A4B2893C08600486E42 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6CEF8A542893C08600486E42 /* Git_TrendoUITests.swift in Sources */,
+				6CEF8A562893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6CEF8A472893C08600486E42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CEF8A2E2893C08500486E42 /* Git-Trendo */;
+			targetProxy = 6CEF8A462893C08600486E42 /* PBXContainerItemProxy */;
+		};
+		6CEF8A512893C08600486E42 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6CEF8A2E2893C08500486E42 /* Git-Trendo */;
+			targetProxy = 6CEF8A502893C08600486E42 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		6CEF8A3D2893C08600486E42 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6CEF8A3E2893C08600486E42 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		6CEF8A572893C08600486E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		6CEF8A582893C08600486E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		6CEF8A5A2893C08600486E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Git-Trendo/Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = LaunchScreen;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Git-Trendo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		6CEF8A5B2893C08600486E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Git-Trendo/Info.plist";
+				INFOPLIST_KEY_NSMainNibFile = LaunchScreen;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Git-Trendo";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		6CEF8A5D2893C08600486E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Git-TrendoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Git-Trendo.app/Git-Trendo";
+			};
+			name = Debug;
+		};
+		6CEF8A5E2893C08600486E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Git-TrendoTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Git-Trendo.app/Git-Trendo";
+			};
+			name = Release;
+		};
+		6CEF8A602893C08600486E42 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Git-TrendoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Git-Trendo";
+			};
+			name = Debug;
+		};
+		6CEF8A612893C08600486E42 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Git-TrendoUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Git-Trendo";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6CEF8A2A2893C08500486E42 /* Build configuration list for PBXProject "Git-Trendo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEF8A572893C08600486E42 /* Debug */,
+				6CEF8A582893C08600486E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CEF8A592893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-Trendo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEF8A5A2893C08600486E42 /* Debug */,
+				6CEF8A5B2893C08600486E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CEF8A5C2893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-TrendoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEF8A5D2893C08600486E42 /* Debug */,
+				6CEF8A5E2893C08600486E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6CEF8A5F2893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-TrendoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6CEF8A602893C08600486E42 /* Debug */,
+				6CEF8A612893C08600486E42 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 6CEF8A272893C08500486E42 /* Project object */;
+}
