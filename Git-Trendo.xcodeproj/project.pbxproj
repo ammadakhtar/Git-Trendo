@@ -31,6 +31,7 @@
 		6CEF8A912893E84100486E42 /* TrendingRepoQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A902893E84100486E42 /* TrendingRepoQuery.swift */; };
 		6CEF8A932893E9E900486E42 /* TrendingRequestDTO+Mapping.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A922893E9E900486E42 /* TrendingRequestDTO+Mapping.swift */; };
 		6CEF8A952893EA9200486E42 /* APIEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A942893EA9200486E42 /* APIEndpoints.swift */; };
+		6CEF8A982893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A972893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		6CEF8A902893E84100486E42 /* TrendingRepoQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoQuery.swift; sourceTree = "<group>"; };
 		6CEF8A922893E9E900486E42 /* TrendingRequestDTO+Mapping.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TrendingRequestDTO+Mapping.swift"; sourceTree = "<group>"; };
 		6CEF8A942893EA9200486E42 /* APIEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndpoints.swift; sourceTree = "<group>"; };
+		6CEF8A972893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTrendingRepositoriesUseCase.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -181,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				6CEF8A7B2893D3BC00486E42 /* Entities */,
+				6CEF8A962893EF4A00486E42 /* UseCases */,
 				6CEF8A872893E48600486E42 /* Interfaces */,
 			);
 			path = Domain;
@@ -314,6 +317,14 @@
 				6CEF8A8E2893E63000486E42 /* FetchTrendingRepositoriesTask.swift */,
 			);
 			path = Utlis;
+			sourceTree = "<group>";
+		};
+		6CEF8A962893EF4A00486E42 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				6CEF8A972893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift */,
+			);
+			path = UseCases;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -453,6 +464,7 @@
 				6CEF8A332893C08500486E42 /* AppDelegate.swift in Sources */,
 				6CEF8A832893D8FB00486E42 /* TrendingResponseDTO+Mapping.swift in Sources */,
 				6CEF8A932893E9E900486E42 /* TrendingRequestDTO+Mapping.swift in Sources */,
+				6CEF8A982893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift in Sources */,
 				6CEF8A862893E44200486E42 /* TrendingRepositories.swift in Sources */,
 				6CEF8A702893C2D200486E42 /* AppFlowCoordinator.swift in Sources */,
 				6CEF8A7F2893D4D100486E42 /* TrendingRepo.swift in Sources */,

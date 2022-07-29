@@ -7,7 +7,7 @@
 
 import Foundation
 
-final class TrendingRepository: TrendingRepositoryProtocol {
+final class TrendingRepositories: TrendingRepositoryProtocol {
 
     private let dataTransferService: DataTransferService
 

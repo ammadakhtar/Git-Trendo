@@ -7,7 +7,7 @@
 
 import Foundation
 
-class FetchTrendingRepositoriesTask: Cancellable {
+final class FetchTrendingRepositoriesTask: Cancellable {
     var networkTask: NetworkCancellable?
     var isCancelled: Bool = false
 

@@ -9,5 +9,7 @@ import Foundation
 
 protocol TrendingRepositoryProtocol: AnyObject {
     @discardableResult
-    func fetchTrendingRepositories(query: TrendingRepoQuery, loadFromCache: Bool, completion: @escaping (Result<TrendingRepos, Error>) -> Void) -> Cancellable?
+    func fetchTrendingRepositories(query: TrendingRepoQuery,
+                                   loadFromCache: Bool,
+                                   completion: @escaping (Result<TrendingRepos, Error>) -> Void) -> Cancellable?
 }
