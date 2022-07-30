@@ -117,6 +117,10 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
             } else {
                 cell.configureCell(data: viewModel.repos.value[indexPath.row])
             }
+
+            if indexPath.row == viewModel.repos.value.count - 1 {
+                viewModel.didLoadNextPage()
+            }
             return cell
         }
         return UITableViewCell()

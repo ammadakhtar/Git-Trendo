@@ -106,7 +106,7 @@ final class TrendingRepoListViewModel: MoviesListViewModelInput, MoviesListViewM
     private func handleData(_ data: TrendingRepos) {
         currentPage = nextPage
         totalPageCount = data.totalCount
-        repos.value = data.reposArray.map(TrendingRepositoriesListItemViewModel.init)
+        repos.value.append(contentsOf: data.reposArray.map(TrendingRepositoriesListItemViewModel.init))
     }
 
     private func reloadData() {
