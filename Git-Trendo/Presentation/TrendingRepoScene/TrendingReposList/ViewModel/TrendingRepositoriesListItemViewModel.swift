@@ -15,7 +15,7 @@ struct TrendingRepositoriesListItemViewModel {
     let description: String?
     let language: String?
     let starsCount: Int
-    var isCollapsed: Bool = false
+    var isCollapsed: Bool = true
 
     init(repo: Repo) {
         self.id = repo.id

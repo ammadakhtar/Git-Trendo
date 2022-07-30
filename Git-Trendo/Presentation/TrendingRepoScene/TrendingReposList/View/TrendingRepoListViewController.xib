@@ -21,18 +21,14 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxN-RY-big">
-                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <subviews>
-                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KBj-E5-xHG">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" allowsSelectionDuringEditing="YES" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KBj-E5-xHG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="852"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                             <userDefinedRuntimeAttributes>
                                 <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
                             </userDefinedRuntimeAttributes>
-                            <connections>
-                                <outlet property="dataSource" destination="-1" id="UJ2-FZ-UgV"/>
-                                <outlet property="delegate" destination="-1" id="btx-FW-Ezf"/>
-                            </connections>
                         </tableView>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -50,7 +46,7 @@
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QxN-RY-big" secondAttribute="bottom" id="I3I-NT-5Fv"/>
+                <constraint firstAttribute="bottom" secondItem="QxN-RY-big" secondAttribute="bottom" id="40d-1H-WXe"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QxN-RY-big" secondAttribute="trailing" id="I5E-2B-hdK"/>
                 <constraint firstItem="QxN-RY-big" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Yj0-MZ-Xfv"/>
                 <constraint firstItem="QxN-RY-big" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lRk-ff-nsC"/>

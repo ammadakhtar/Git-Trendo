@@ -9,14 +9,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ErrorView" customModule="Git_Trendo" customModuleProvider="target">
-            <connections>
-                <outlet property="lottieView" destination="Zhm-1c-1IG" id="NCk-wm-X0y"/>
-                <outlet property="retryButton" destination="POy-In-QXl" id="H4R-O1-n74"/>
-            </connections>
-        </placeholder>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <view contentMode="scaleToFill" id="iN0-l3-epB">
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="ErrorView" customModule="Git_Trendo" customModuleProvider="target">
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
@@ -30,7 +25,7 @@
                         <color key="titleColor" systemColor="systemGreenColor"/>
                     </state>
                     <connections>
-                        <action selector="retryButtonTapped" destination="-1" eventType="touchUpInside" id="tSf-ho-uQ7"/>
+                        <action selector="retryButtonTapped" destination="iN0-l3-epB" eventType="touchUpInside" id="KFu-Be-mNq"/>
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Something went wrong.." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tFJ-ou-Ngy">
@@ -76,6 +71,10 @@
                 <constraint firstItem="J5U-Li-jbO" firstAttribute="top" secondItem="tFJ-ou-Ngy" secondAttribute="bottom" constant="16" id="puC-Ii-QE9"/>
                 <constraint firstItem="J5U-Li-jbO" firstAttribute="trailing" secondItem="tFJ-ou-Ngy" secondAttribute="trailing" id="xji-r1-jMi"/>
             </constraints>
+            <connections>
+                <outlet property="lottieView" destination="Zhm-1c-1IG" id="lAH-kY-t8v"/>
+                <outlet property="retryButton" destination="POy-In-QXl" id="aJ6-QP-OyZ"/>
+            </connections>
             <point key="canvasLocation" x="132" y="107"/>
         </view>
     </objects>

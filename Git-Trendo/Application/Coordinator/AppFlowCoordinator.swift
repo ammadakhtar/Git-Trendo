@@ -13,8 +13,10 @@ final class AppFlowCoordinator: Coordinator {
     var appDIContainer: AppDIContainer
 
     init(navigationController: UINavigationController, appDIContainer: AppDIContainer) {
-        navigationController.isNavigationBarHidden = true
         self.navigationController = navigationController
+        self.navigationController.navigationBar.prefersLargeTitles = true
+        self.navigationController.navigationItem.largeTitleDisplayMode = .automatic
+        self.navigationController.navigationBar.sizeToFit()
         self.appDIContainer = appDIContainer
     }
 

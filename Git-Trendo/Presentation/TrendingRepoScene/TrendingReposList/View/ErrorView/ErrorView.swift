@@ -23,24 +23,19 @@ final class ErrorView: UIView {
 
     // MARK: - Init
 
-    override init(frame: CGRect) {
-        super.init(frame: frame)
+    override func awakeFromNib() {
+        super.awakeFromNib()
         setupViews()
     }
 
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setupViews()
+    class func instanceFromNib() -> ErrorView? {
+        return UINib(nibName: String(describing: ErrorView.self),
+                     bundle: nil).instantiate(withOwner: nil, options: nil)[0] as? ErrorView
     }
 
     // MARK: - Private Methods
 
     private func setupViews() {
-       // guard let errorView = self.fromNib(nibName: "ErrorView") else { return }
-        let errorView = ErrorView.loadFromXib(withOwner: self)
-        errorView.frame = self.bounds
-        self.addSubview(errorView)
-
         lottieView.animation = .named("lottie_badNetwork")
         lottieView.loopMode = .loop
         lottieView.play()

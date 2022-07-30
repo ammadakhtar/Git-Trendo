@@ -8,7 +8,7 @@
 import UIKit
 import SkeletonView
 
-final class TrendingRepoListViewController: UIViewController, SkeletonTableViewDataSource, ErrorViewDelegate {
+final class TrendingRepoListViewController: UIViewController, UITableViewDelegate, SkeletonTableViewDataSource, ErrorViewDelegate {
 
     // MARK: - IBOutlets and variables
 
@@ -46,6 +46,9 @@ final class TrendingRepoListViewController: UIViewController, SkeletonTableViewD
     private func configureTableView() {
         trendingRepoTableView.register(cellType: TrendingRepositoryTableViewCell.self)
         trendingRepoTableView.refreshControl = refreshControl
+        trendingRepoTableView.delegate = self
+        trendingRepoTableView.dataSource = self
+        trendingRepoTableView.allowsSelection = true
         refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
     }
 
@@ -79,31 +82,32 @@ final class TrendingRepoListViewController: UIViewController, SkeletonTableViewD
 
     private func showError(_ error: String) {
         guard !error.isEmpty else { return }
-        self.errorView = ErrorView(frame: self.view.bounds)
+        // we can hide refresh control here //
+        self.errorView = ErrorView.instanceFromNib()
+        self.errorView?.frame = self.view.frame
         self.errorView?.delegate = self
         view.addSubview(errorView!)
     }
 
     private func hideSkeletionAnimations() {
         view.stopSkeletonAnimation()
-        view.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.25))
+        view.hideSkeleton(reloadDataAfter: true, transition: .crossDissolve(0.5))
     }
 
     // MARK: - Selector Methods
 
     @objc private func pullToRefresh() {
-        view.showAnimatedGradientSkeleton()
         viewModel.pullToRefresh()
     }
 
-    // MARK: - UITableView Delegate
+    // MARK: - SkeletonTableView DataSource
 
     func collectionSkeletonView(_ skeletonView: UITableView, cellIdentifierForRowAt indexPath: IndexPath) -> ReusableCellIdentifier {
         return TrendingRepositoryTableViewCell.reuseIdentifier
     }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return viewModel.loading.value == .firstPage ? 7 : viewModel.repos.value.count
+        return viewModel.loading.value == .firstPage ? 10 : viewModel.repos.value.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -118,9 +122,18 @@ final class TrendingRepoListViewController: UIViewController, SkeletonTableViewD
         return UITableViewCell()
     }
 
+    // MARK: - UITableView Delegate
+
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if viewModel.repos.value.count > 0 {
+            viewModel.repos.value[indexPath.row].isCollapsed.toggle()
+            trendingRepoTableView.reloadData()
+        }
+    }
+
     // MARK: - ErrorView Delegate
 
     func retryButtonTapped() {
-        viewModel.pullToRefresh()
+        viewModel.retryForError()
     }
 }
