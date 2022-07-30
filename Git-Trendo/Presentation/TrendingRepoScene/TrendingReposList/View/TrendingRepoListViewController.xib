@@ -20,24 +20,45 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KBj-E5-xHG">
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QxN-RY-big">
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KBj-E5-xHG">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="818"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <outlet property="dataSource" destination="-1" id="UJ2-FZ-UgV"/>
+                                <outlet property="delegate" destination="-1" id="btx-FW-Ezf"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    <connections>
-                        <outlet property="dataSource" destination="-1" id="UJ2-FZ-UgV"/>
-                        <outlet property="delegate" destination="-1" id="btx-FW-Ezf"/>
-                    </connections>
-                </tableView>
+                    <constraints>
+                        <constraint firstItem="KBj-E5-xHG" firstAttribute="top" secondItem="QxN-RY-big" secondAttribute="top" id="1zz-fo-SsY"/>
+                        <constraint firstAttribute="trailing" secondItem="KBj-E5-xHG" secondAttribute="trailing" id="ByG-4y-vna"/>
+                        <constraint firstAttribute="bottom" secondItem="KBj-E5-xHG" secondAttribute="bottom" id="MNY-6S-i0w"/>
+                        <constraint firstItem="KBj-E5-xHG" firstAttribute="leading" secondItem="QxN-RY-big" secondAttribute="leading" id="UFZ-HH-Wae"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KBj-E5-xHG" secondAttribute="trailing" id="WhE-Sl-lwI"/>
-                <constraint firstItem="KBj-E5-xHG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="mal-aM-9B2"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="KBj-E5-xHG" secondAttribute="bottom" id="qw2-us-TiG"/>
-                <constraint firstItem="KBj-E5-xHG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="seW-I4-ApE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="QxN-RY-big" secondAttribute="bottom" id="I3I-NT-5Fv"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="QxN-RY-big" secondAttribute="trailing" id="I5E-2B-hdK"/>
+                <constraint firstItem="QxN-RY-big" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Yj0-MZ-Xfv"/>
+                <constraint firstItem="QxN-RY-big" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="lRk-ff-nsC"/>
             </constraints>
-            <point key="canvasLocation" x="132" y="107"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
+            </userDefinedRuntimeAttributes>
+            <point key="canvasLocation" x="131.8840579710145" y="106.47321428571428"/>
         </view>
     </objects>
     <resources>

@@ -6,18 +6,32 @@
 //
 
 import UIKit
+import SDWebImage
 
-class TrendingRepositoryTableViewCell: UITableViewCell {
+final class TrendingRepositoryTableViewCell: UITableViewCell {
+
+    // MARK: - IBOutlets and variables
+
+    @IBOutlet weak var profileImageView: UIImageView!
+    @IBOutlet weak var repoOwnerNameLabel: UILabel!
+    @IBOutlet weak var repoTitleLabel: UILabel!
+
+    static let reuseIdentifier = "TrendingRepositoryTableViewCell"
+
+    // MARK: - LifeCycle Methods
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        profileImageView.layer.cornerRadius = profileImageView.frame.height/2
     }
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
+    // MARK: - Methods
 
-        // Configure the view for the selected state
+    func configureCell(data: TrendingRepositoriesListItemViewModel) {
+        if let url = URL(string: data.owner.avatarUrl) {
+            profileImageView.sd_setImage(with: url)
+        }
+        repoOwnerNameLabel.text = data.owner.login
+        repoTitleLabel.text = data.name
     }
-    
 }

@@ -14,6 +14,8 @@ enum TrendingRepositoriesListViewModelLoading {
 
 protocol MoviesListViewModelInput {
     func viewDidLoad()
+    func pullToRefresh()
+    func retryForError()
     func didLoadNextPage()
     func didSelectItem(at index: Int)
 }
@@ -72,6 +74,14 @@ final class TrendingRepoListViewModel: MoviesListViewModelInput, MoviesListViewM
     func didSelectItem(at index: Int) {
     }
 
+    func pullToRefresh() {
+        reloadData()
+    }
+
+    func retryForError() {
+        reloadData()
+    }
+
     // MARK: - Private Methods
 
     private func loadData() {
@@ -99,9 +109,11 @@ final class TrendingRepoListViewModel: MoviesListViewModelInput, MoviesListViewM
         repos.value = data.reposArray.map(TrendingRepositoriesListItemViewModel.init)
     }
 
-    private func resetPages() {
+    private func reloadData() {
+        loading.value = .firstPage
         currentPage = 0
         totalPageCount = 1
         repos.value.removeAll()
+        loadData()
     }
 }
