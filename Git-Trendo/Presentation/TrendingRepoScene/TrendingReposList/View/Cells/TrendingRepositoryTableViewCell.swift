@@ -25,6 +25,10 @@ final class TrendingRepositoryTableViewCell: UITableViewCell {
         profileImageView.layer.cornerRadius = profileImageView.frame.height/2
     }
 
+    override func prepareForReuse() {
+        profileImageView.image = nil
+    }
+
     // MARK: - Methods
 
     func configureCell(data: TrendingRepositoriesListItemViewModel) {
