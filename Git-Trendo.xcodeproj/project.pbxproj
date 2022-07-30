@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		49B2D92D4E37981DB3E9806F /* Pods_Git_Trendo_Git_TrendoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F288E5A6209562525AC8D8E /* Pods_Git_Trendo_Git_TrendoUITests.framework */; };
+		56DBA934FB3651A747616B05 /* Pods_Git_TrendoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A245B83E021C3FC23244ADED /* Pods_Git_TrendoTests.framework */; };
 		6CEF8A332893C08500486E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A322893C08500486E42 /* AppDelegate.swift */; };
 		6CEF8A352893C08500486E42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A342893C08500486E42 /* SceneDelegate.swift */; };
 		6CEF8A3C2893C08600486E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF8A3B2893C08600486E42 /* Assets.xcassets */; };
@@ -42,6 +44,7 @@
 		6CEF8AB02894178900486E42 /* TrendingReposSceneDIContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8AAF2894178900486E42 /* TrendingReposSceneDIContainer.swift */; };
 		6CEF8AB42894248A00486E42 /* TrendingRepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8AB22894248A00486E42 /* TrendingRepositoryTableViewCell.swift */; };
 		6CEF8AB52894248A00486E42 /* TrendingRepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF8AB32894248A00486E42 /* TrendingRepositoryTableViewCell.xib */; };
+		BB0800B716321EF051405635 /* Pods_Git_Trendo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF6AD3F2C9F6789A76C12E7C /* Pods_Git_Trendo.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		11E8E7296ED77D0452D8BA4B /* Pods-Git-Trendo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-Trendo.release.xcconfig"; path = "Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo.release.xcconfig"; sourceTree = "<group>"; };
+		1F288E5A6209562525AC8D8E /* Pods_Git_Trendo_Git_TrendoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_Trendo_Git_TrendoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		58CF12DCD4117B184BE16A49 /* Pods-Git-Trendo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-Trendo.debug.xcconfig"; path = "Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo.debug.xcconfig"; sourceTree = "<group>"; };
 		6CEF8A2F2893C08500486E42 /* Git-Trendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git-Trendo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEF8A322893C08500486E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CEF8A342893C08500486E42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -101,6 +107,12 @@
 		6CEF8AAF2894178900486E42 /* TrendingReposSceneDIContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingReposSceneDIContainer.swift; sourceTree = "<group>"; };
 		6CEF8AB22894248A00486E42 /* TrendingRepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepositoryTableViewCell.swift; sourceTree = "<group>"; };
 		6CEF8AB32894248A00486E42 /* TrendingRepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrendingRepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		948C0088694BFAC84E964C99 /* Pods-Git-Trendo-Git-TrendoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-Trendo-Git-TrendoUITests.debug.xcconfig"; path = "Target Support Files/Pods-Git-Trendo-Git-TrendoUITests/Pods-Git-Trendo-Git-TrendoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A245B83E021C3FC23244ADED /* Pods_Git_TrendoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_TrendoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62BCF9BE4217CFC1B2C7BD4 /* Pods-Git-Trendo-Git-TrendoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-Trendo-Git-TrendoUITests.release.xcconfig"; path = "Target Support Files/Pods-Git-Trendo-Git-TrendoUITests/Pods-Git-Trendo-Git-TrendoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BA4640B72C24B2CE4FC12AF2 /* Pods-Git-TrendoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-TrendoTests.release.xcconfig"; path = "Target Support Files/Pods-Git-TrendoTests/Pods-Git-TrendoTests.release.xcconfig"; sourceTree = "<group>"; };
+		EF6AD3F2C9F6789A76C12E7C /* Pods_Git_Trendo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_Trendo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EFC471355267DE513258BEA2 /* Pods-Git-TrendoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-TrendoTests.debug.xcconfig"; path = "Target Support Files/Pods-Git-TrendoTests/Pods-Git-TrendoTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,6 +120,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB0800B716321EF051405635 /* Pods_Git_Trendo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +128,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				56DBA934FB3651A747616B05 /* Pods_Git_TrendoTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,6 +136,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B2D92D4E37981DB3E9806F /* Pods_Git_Trendo_Git_TrendoUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -135,6 +150,8 @@
 				6CEF8A482893C08600486E42 /* Git-TrendoTests */,
 				6CEF8A522893C08600486E42 /* Git-TrendoUITests */,
 				6CEF8A302893C08500486E42 /* Products */,
+				BCC6B78B12DAF554D6766AA4 /* Pods */,
+				A902404684FB1148A6C77803 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -413,6 +430,30 @@
 			path = Cells;
 			sourceTree = "<group>";
 		};
+		A902404684FB1148A6C77803 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EF6AD3F2C9F6789A76C12E7C /* Pods_Git_Trendo.framework */,
+				1F288E5A6209562525AC8D8E /* Pods_Git_Trendo_Git_TrendoUITests.framework */,
+				A245B83E021C3FC23244ADED /* Pods_Git_TrendoTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCC6B78B12DAF554D6766AA4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				58CF12DCD4117B184BE16A49 /* Pods-Git-Trendo.debug.xcconfig */,
+				11E8E7296ED77D0452D8BA4B /* Pods-Git-Trendo.release.xcconfig */,
+				948C0088694BFAC84E964C99 /* Pods-Git-Trendo-Git-TrendoUITests.debug.xcconfig */,
+				B62BCF9BE4217CFC1B2C7BD4 /* Pods-Git-Trendo-Git-TrendoUITests.release.xcconfig */,
+				EFC471355267DE513258BEA2 /* Pods-Git-TrendoTests.debug.xcconfig */,
+				BA4640B72C24B2CE4FC12AF2 /* Pods-Git-TrendoTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -420,9 +461,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CEF8A592893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-Trendo" */;
 			buildPhases = (
+				4CB42CCF28AFE344FC474D17 /* [CP] Check Pods Manifest.lock */,
 				6CEF8A2B2893C08500486E42 /* Sources */,
 				6CEF8A2C2893C08500486E42 /* Frameworks */,
 				6CEF8A2D2893C08500486E42 /* Resources */,
+				AC2C2970DC0DA1028464B0A0 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -437,6 +480,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CEF8A5C2893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-TrendoTests" */;
 			buildPhases = (
+				7614B1E351305C2E7A67E543 /* [CP] Check Pods Manifest.lock */,
 				6CEF8A412893C08600486E42 /* Sources */,
 				6CEF8A422893C08600486E42 /* Frameworks */,
 				6CEF8A432893C08600486E42 /* Resources */,
@@ -455,9 +499,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6CEF8A5F2893C08600486E42 /* Build configuration list for PBXNativeTarget "Git-TrendoUITests" */;
 			buildPhases = (
+				92C5C94613386A51A2254E48 /* [CP] Check Pods Manifest.lock */,
 				6CEF8A4B2893C08600486E42 /* Sources */,
 				6CEF8A4C2893C08600486E42 /* Frameworks */,
 				6CEF8A4D2893C08600486E42 /* Resources */,
+				C4B9A23F6656F9F01271560C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -539,6 +585,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4CB42CCF28AFE344FC474D17 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Git-Trendo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7614B1E351305C2E7A67E543 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Git-TrendoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92C5C94613386A51A2254E48 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Git-Trendo-Git-TrendoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC2C2970DC0DA1028464B0A0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C4B9A23F6656F9F01271560C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Git-Trendo-Git-TrendoUITests/Pods-Git-Trendo-Git-TrendoUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Git-Trendo-Git-TrendoUITests/Pods-Git-Trendo-Git-TrendoUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Git-Trendo-Git-TrendoUITests/Pods-Git-Trendo-Git-TrendoUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6CEF8A2B2893C08500486E42 /* Sources */ = {
@@ -738,6 +887,7 @@
 		};
 		6CEF8A5A2893C08600486E42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 58CF12DCD4117B184BE16A49 /* Pods-Git-Trendo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -766,6 +916,7 @@
 		};
 		6CEF8A5B2893C08600486E42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E8E7296ED77D0452D8BA4B /* Pods-Git-Trendo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -794,6 +945,7 @@
 		};
 		6CEF8A5D2893C08600486E42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EFC471355267DE513258BEA2 /* Pods-Git-TrendoTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -813,6 +965,7 @@
 		};
 		6CEF8A5E2893C08600486E42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA4640B72C24B2CE4FC12AF2 /* Pods-Git-TrendoTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -832,6 +985,7 @@
 		};
 		6CEF8A602893C08600486E42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 948C0088694BFAC84E964C99 /* Pods-Git-Trendo-Git-TrendoUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -849,6 +1003,7 @@
 		};
 		6CEF8A612893C08600486E42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62BCF9BE4217CFC1B2C7BD4 /* Pods-Git-Trendo-Git-TrendoUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

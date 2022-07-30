@@ -1,0 +1,6 @@
+framework module Pods_Git_Trendo {
+  umbrella header "Pods-Git-Trendo-umbrella.h"
+
+  export *
+  module * { export * }
+}

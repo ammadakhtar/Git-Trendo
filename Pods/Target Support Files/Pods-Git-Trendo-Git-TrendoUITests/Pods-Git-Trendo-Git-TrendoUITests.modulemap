@@ -1,0 +1,6 @@
+framework module Pods_Git_Trendo_Git_TrendoUITests {
+  umbrella header "Pods-Git-Trendo-Git-TrendoUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
