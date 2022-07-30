@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		49B2D92D4E37981DB3E9806F /* Pods_Git_Trendo_Git_TrendoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F288E5A6209562525AC8D8E /* Pods_Git_Trendo_Git_TrendoUITests.framework */; };
 		56DBA934FB3651A747616B05 /* Pods_Git_TrendoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A245B83E021C3FC23244ADED /* Pods_Git_TrendoTests.framework */; };
+		6C3BF14A28959FD10010882D /* NetworkConfigurableMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3BF14928959FD10010882D /* NetworkConfigurableMock.swift */; };
+		6C3BF14D2895A01E0010882D /* NetworkSessionManagerMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3BF14C2895A01E0010882D /* NetworkSessionManagerMock.swift */; };
+		6C3BF14E2895A0460010882D /* NetworkConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A792893C96700486E42 /* NetworkConfig.swift */; };
+		6C3BF14F2895A04B0010882D /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A752893C92E00486E42 /* NetworkService.swift */; };
+		6C3BF1512895A08B0010882D /* NetworkServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3BF1502895A08B0010882D /* NetworkServiceTests.swift */; };
+		6C3BF1522895A0D80010882D /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A772893C94F00486E42 /* Endpoint.swift */; };
+		6C3BF1532895A0F80010882D /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A732893C91500486E42 /* DataTransferService.swift */; };
+		6C3BF1552895A11F0010882D /* DataTransferServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3BF1542895A11F0010882D /* DataTransferServiceTests.swift */; };
+		6C3BF1582895A27D0010882D /* Repo+Stub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C3BF1572895A27D0010882D /* Repo+Stub.swift */; };
+		6C3BF1592895A29C0010882D /* Repo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A7C2893D48100486E42 /* Repo.swift */; };
 		6C9B4B49289522CC00F9DE1F /* NibLoadableView+TableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B4B48289522CC00F9DE1F /* NibLoadableView+TableView.swift */; };
 		6C9B4B4E28953E3600F9DE1F /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B4B4D28953E3600F9DE1F /* ErrorView.xib */; };
 		6C9B4B5028953EDD00F9DE1F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B4B4F28953EDD00F9DE1F /* ErrorView.swift */; };
@@ -18,7 +28,6 @@
 		6CEF8A352893C08500486E42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A342893C08500486E42 /* SceneDelegate.swift */; };
 		6CEF8A3C2893C08600486E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF8A3B2893C08600486E42 /* Assets.xcassets */; };
 		6CEF8A3F2893C08600486E42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF8A3D2893C08600486E42 /* LaunchScreen.storyboard */; };
-		6CEF8A4A2893C08600486E42 /* Git_TrendoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A492893C08600486E42 /* Git_TrendoTests.swift */; };
 		6CEF8A542893C08600486E42 /* Git_TrendoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A532893C08600486E42 /* Git_TrendoUITests.swift */; };
 		6CEF8A562893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A552893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift */; };
 		6CEF8A6C2893C28F00486E42 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A6B2893C28F00486E42 /* Coordinator.swift */; };
@@ -73,6 +82,11 @@
 		11E8E7296ED77D0452D8BA4B /* Pods-Git-Trendo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-Trendo.release.xcconfig"; path = "Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo.release.xcconfig"; sourceTree = "<group>"; };
 		1F288E5A6209562525AC8D8E /* Pods_Git_Trendo_Git_TrendoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_Trendo_Git_TrendoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CF12DCD4117B184BE16A49 /* Pods-Git-Trendo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-Trendo.debug.xcconfig"; path = "Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo.debug.xcconfig"; sourceTree = "<group>"; };
+		6C3BF14928959FD10010882D /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
+		6C3BF14C2895A01E0010882D /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
+		6C3BF1502895A08B0010882D /* NetworkServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTests.swift; sourceTree = "<group>"; };
+		6C3BF1542895A11F0010882D /* DataTransferServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferServiceTests.swift; sourceTree = "<group>"; };
+		6C3BF1572895A27D0010882D /* Repo+Stub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Repo+Stub.swift"; sourceTree = "<group>"; };
 		6C9B4B48289522CC00F9DE1F /* NibLoadableView+TableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NibLoadableView+TableView.swift"; sourceTree = "<group>"; };
 		6C9B4B4D28953E3600F9DE1F /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		6C9B4B4F28953EDD00F9DE1F /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
@@ -85,7 +99,6 @@
 		6CEF8A3E2893C08600486E42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6CEF8A402893C08600486E42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6CEF8A452893C08600486E42 /* Git-TrendoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Git-TrendoTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		6CEF8A492893C08600486E42 /* Git_TrendoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git_TrendoTests.swift; sourceTree = "<group>"; };
 		6CEF8A4F2893C08600486E42 /* Git-TrendoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Git-TrendoUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEF8A532893C08600486E42 /* Git_TrendoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git_TrendoUITests.swift; sourceTree = "<group>"; };
 		6CEF8A552893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Git_TrendoUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -153,6 +166,41 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6C3BF14628959F9D0010882D /* Infrastructure */ = {
+			isa = PBXGroup;
+			children = (
+				6C3BF14728959FAB0010882D /* Network */,
+			);
+			path = Infrastructure;
+			sourceTree = "<group>";
+		};
+		6C3BF14728959FAB0010882D /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				6C3BF14828959FB50010882D /* Mocks */,
+				6C3BF1502895A08B0010882D /* NetworkServiceTests.swift */,
+				6C3BF1542895A11F0010882D /* DataTransferServiceTests.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		6C3BF14828959FB50010882D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6C3BF14928959FD10010882D /* NetworkConfigurableMock.swift */,
+				6C3BF14C2895A01E0010882D /* NetworkSessionManagerMock.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
+		6C3BF1562895A2680010882D /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				6C3BF1572895A27D0010882D /* Repo+Stub.swift */,
+			);
+			path = Mocks;
+			sourceTree = "<group>";
+		};
 		6C9B4B47289522A600F9DE1F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
@@ -212,7 +260,8 @@
 		6CEF8A482893C08600486E42 /* Git-TrendoTests */ = {
 			isa = PBXGroup;
 			children = (
-				6CEF8A492893C08600486E42 /* Git_TrendoTests.swift */,
+				6C3BF1562895A2680010882D /* Mocks */,
+				6C3BF14628959F9D0010882D /* Infrastructure */,
 			);
 			path = "Git-TrendoTests";
 			sourceTree = "<group>";
@@ -764,7 +813,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6CEF8A4A2893C08600486E42 /* Git_TrendoTests.swift in Sources */,
+				6C3BF1522895A0D80010882D /* Endpoint.swift in Sources */,
+				6C3BF14F2895A04B0010882D /* NetworkService.swift in Sources */,
+				6C3BF1552895A11F0010882D /* DataTransferServiceTests.swift in Sources */,
+				6C3BF1582895A27D0010882D /* Repo+Stub.swift in Sources */,
+				6C3BF14A28959FD10010882D /* NetworkConfigurableMock.swift in Sources */,
+				6C3BF1532895A0F80010882D /* DataTransferService.swift in Sources */,
+				6C3BF14E2895A0460010882D /* NetworkConfig.swift in Sources */,
+				6C3BF1592895A29C0010882D /* Repo.swift in Sources */,
+				6C3BF1512895A08B0010882D /* NetworkServiceTests.swift in Sources */,
+				6C3BF14D2895A01E0010882D /* NetworkSessionManagerMock.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

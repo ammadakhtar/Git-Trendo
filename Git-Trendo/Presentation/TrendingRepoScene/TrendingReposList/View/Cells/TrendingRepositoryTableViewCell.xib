@@ -109,7 +109,7 @@
                                                 </userDefinedRuntimeAttributes>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PAz-8b-WaG">
-                                                <rect key="frame" x="78" y="16" width="0.0" height="0.0"/>
+                                                <rect key="frame" x="70" y="16" width="0.0" height="0.0"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
@@ -126,10 +126,10 @@
                                             <constraint firstItem="bAV-rS-KBo" firstAttribute="leading" secondItem="7hR-5H-3Tj" secondAttribute="trailing" constant="16" id="6am-Nm-4rc"/>
                                             <constraint firstItem="cp6-8X-Xby" firstAttribute="centerY" secondItem="I2Y-hc-w2w" secondAttribute="centerY" id="8Ds-ng-7UH"/>
                                             <constraint firstItem="7hR-5H-3Tj" firstAttribute="centerY" secondItem="cp6-8X-Xby" secondAttribute="centerY" id="Tg1-2q-ghe"/>
-                                            <constraint firstItem="7hR-5H-3Tj" firstAttribute="leading" secondItem="cp6-8X-Xby" secondAttribute="trailing" constant="8" symbolic="YES" id="sjS-kp-7AN"/>
+                                            <constraint firstItem="7hR-5H-3Tj" firstAttribute="leading" secondItem="cp6-8X-Xby" secondAttribute="trailing" constant="8" id="sjS-kp-7AN"/>
                                             <constraint firstItem="PAz-8b-WaG" firstAttribute="centerY" secondItem="bAV-rS-KBo" secondAttribute="centerY" id="u5j-31-H1g"/>
                                             <constraint firstItem="bAV-rS-KBo" firstAttribute="centerY" secondItem="cp6-8X-Xby" secondAttribute="centerY" id="w2R-Iw-wrC"/>
-                                            <constraint firstItem="PAz-8b-WaG" firstAttribute="leading" secondItem="bAV-rS-KBo" secondAttribute="trailing" constant="16" id="ygx-QQ-byD"/>
+                                            <constraint firstItem="PAz-8b-WaG" firstAttribute="leading" secondItem="bAV-rS-KBo" secondAttribute="trailing" constant="8" id="ygx-QQ-byD"/>
                                         </constraints>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="boolean" keyPath="isSkeletonable" value="YES"/>
