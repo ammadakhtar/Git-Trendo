@@ -48,7 +48,6 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
         trendingRepoTableView.refreshControl = refreshControl
         trendingRepoTableView.delegate = self
         trendingRepoTableView.dataSource = self
-        trendingRepoTableView.allowsSelection = true
         refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
     }
 
