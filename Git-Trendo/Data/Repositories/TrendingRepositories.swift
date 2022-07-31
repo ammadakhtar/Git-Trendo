@@ -19,7 +19,7 @@ final class TrendingRepositories: TrendingRepositoryProtocol {
 
     func fetchTrendingRepositories(page: Int,
                                    loadFromCache: Bool,
-                                   completion: @escaping (Result<TrendingRepos, Error>) -> Void) -> Cancellable? {
+                                   completion: @escaping (Result<TrendingRepo, Error>) -> Void) -> Cancellable? {
         let task = FetchTrendingRepositoriesTask()
         let requestDTO = TrendingRequestDTO(page: page)
 

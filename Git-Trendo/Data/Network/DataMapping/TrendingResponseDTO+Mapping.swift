@@ -51,7 +51,7 @@ extension TrendingResponseDTO {
 // MARK: - Mappings to Domain
 
 extension TrendingResponseDTO {
-    func toDomain() -> TrendingRepos {
+    func toDomain() -> TrendingRepo {
         return .init(totalCount: totalCount,
                      reposArray: reposArray.map { $0.toDomain()})
     }

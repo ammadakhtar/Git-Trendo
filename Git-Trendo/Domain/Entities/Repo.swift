@@ -17,7 +17,7 @@ struct Repo {
 }
 
 
-struct Owner: Codable, Equatable, Identifiable {
+struct Owner {
     let id: Int
     let login: String
     let avatarUrl: String

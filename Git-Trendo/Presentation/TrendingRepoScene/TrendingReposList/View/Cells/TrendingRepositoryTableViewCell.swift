@@ -28,6 +28,14 @@ final class TrendingRepositoryTableViewCell: UITableViewCell {
 
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        accessibilityIdentifier = AccessibilityIdentifier.reopCellIdentifier
+        repoDescriptionLabel.accessibilityIdentifier = AccessibilityIdentifier.repoDescriptionLabelIdentifier
+        repoOwnerNameLabel.accessibilityIdentifier = AccessibilityIdentifier.ownerLabelIdentifier
+        repoTitleLabel.accessibilityIdentifier = AccessibilityIdentifier.repoTitleLabelIdentifier
+        languageLabel.accessibilityIdentifier = AccessibilityIdentifier.repoLanguageLabelIdentifier
+        starCountLabel.accessibilityIdentifier = AccessibilityIdentifier.repoStarCountLabel
+
         profileImageView.layer.cornerRadius = profileImageView.frame.height / 2
         roundIconView.layer.cornerRadius = roundIconView.frame.height / 2
     }

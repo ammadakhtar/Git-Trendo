@@ -14,13 +14,13 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
 
     @IBOutlet weak var trendingRepoTableView: UITableView!
 
-    private let viewModel: TrendingRepoListViewModel
+    private let viewModel: TrendingRepoListViewModelInputOutput
     private let refreshControl = UIRefreshControl()
     private var errorView: ErrorView?
 
     // MARK: - LifeCycle Methods
 
-    init(viewModel: TrendingRepoListViewModel) {
+    init(viewModel: TrendingRepoListViewModelInputOutput) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
     }
@@ -52,7 +52,7 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
         refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
     }
 
-    private func bind(to viewModel: TrendingRepoListViewModel) {
+    private func bind(to viewModel: TrendingRepoListViewModelInputOutput) {
         viewModel.repos.observe(on: self) { [weak self] repos in
             guard let self = self, repos.count > 0 else { return }
             self.refreshControl.endRefreshing()

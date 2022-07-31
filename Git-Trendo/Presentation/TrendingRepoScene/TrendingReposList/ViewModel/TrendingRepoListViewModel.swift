@@ -12,7 +12,7 @@ enum TrendingRepositoriesListViewModelLoading {
     case nextPage
 }
 
-protocol MoviesListViewModelInput {
+protocol TrendingReopsListViewModelInput {
     func viewDidLoad()
     func pullToRefresh()
     func retryForError()
@@ -20,18 +20,20 @@ protocol MoviesListViewModelInput {
     func didSelectItem(at index: Int)
 }
 
-protocol MoviesListViewModelOutput {
+protocol TrendingReopsListViewModelOutput {
     var screenTitle: String { get }
     var repos: Observable<[TrendingRepositoriesListItemViewModel]> { get }
     var loading: Observable<TrendingRepositoriesListViewModelLoading?> { get }
     var error: Observable<String> { get }
 }
 
-final class TrendingRepoListViewModel: MoviesListViewModelInput, MoviesListViewModelOutput {
+protocol TrendingRepoListViewModelInputOutput: TrendingReopsListViewModelInput, TrendingReopsListViewModelOutput {}
+
+final class TrendingRepoListViewModel: TrendingRepoListViewModelInputOutput {
 
     // MARK: - Properties
 
-    private let trendingRepositoriesUseCase: FetchTrendingRepositoryUseCaseProtocol
+    let trendingRepositoriesUseCase: FetchTrendingRepositoryUseCaseProtocol
 
     var currentPage: Int = 0
     var totalPageCount: Int = 1
@@ -103,7 +105,7 @@ final class TrendingRepoListViewModel: MoviesListViewModelInput, MoviesListViewM
         NSLocalizedString("Failed loading movies", comment: "")
     }
 
-    private func handleData(_ data: TrendingRepos) {
+    private func handleData(_ data: TrendingRepo) {
         currentPage = nextPage
         totalPageCount = data.totalCount
         repos.value.append(contentsOf: data.reposArray.map(TrendingRepositoriesListItemViewModel.init))

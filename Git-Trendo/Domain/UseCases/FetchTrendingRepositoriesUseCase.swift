@@ -10,7 +10,7 @@ import Foundation
 protocol FetchTrendingRepositoryUseCaseProtocol: AnyObject {
     func execute(requestvalue: FetchTrendingRepositoryUseCaseRequestValue,
                  loadFromCache: Bool,
-                 completion: @escaping (Result<TrendingRepos, Error>) -> Void) -> Cancellable?
+                 completion: @escaping (Result<TrendingRepo, Error>) -> Void) -> Cancellable?
     }
 
 final class FetchTrendingRepositoryUseCase: FetchTrendingRepositoryUseCaseProtocol {
@@ -25,7 +25,7 @@ final class FetchTrendingRepositoryUseCase: FetchTrendingRepositoryUseCaseProtoc
 
     func execute(requestvalue: FetchTrendingRepositoryUseCaseRequestValue,
                  loadFromCache: Bool,
-                 completion: @escaping (Result<TrendingRepos, Error>) -> Void) -> Cancellable? {
+                 completion: @escaping (Result<TrendingRepo, Error>) -> Void) -> Cancellable? {
         return trendingRepository.fetchTrendingRepositories(page: requestvalue.page, loadFromCache: loadFromCache) { result in
             completion(result)
         }
