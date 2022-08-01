@@ -5,9 +5,9 @@
 //  Created by Ammad Akhtar on 29/07/2022.
 //
 
-import Foundation
+import UIKit
 
-final class TrendingReposSceneDIContainer {
+final class TrendingReposSceneDIContainer: TrendingReposListFlowCoordinatorDependencies {
 
     struct Dependencies {
         let apiDataTransferService: DataTransferService
@@ -39,7 +39,13 @@ final class TrendingReposSceneDIContainer {
 
     // MARK: - ViewController
 
-    func makeTrendingRepoListViewController() -> TrendingRepoListViewController {
+    func makeTrendingReposListViewController() -> TrendingRepoListViewController {
         return TrendingRepoListViewController(viewModel: makeTrendingRepoListViewModel())
+    }
+
+    // MARK: - Flow Coordinators
+    func makeTrendingRepoListFlowCoordinator(navigationController: UINavigationController) -> TrendingReposListFlowCoordinator {
+        return TrendingReposListFlowCoordinator(navigationController: navigationController,
+                                           dependencies: self)
     }
 }

@@ -41,6 +41,7 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
 
     private func setupViews() {
         title = viewModel.screenTitle
+        refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
     }
 
     private func configureTableView() {
@@ -48,16 +49,13 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
         trendingRepoTableView.refreshControl = refreshControl
         trendingRepoTableView.delegate = self
         trendingRepoTableView.dataSource = self
-        refreshControl.addTarget(self, action: #selector(pullToRefresh), for: .valueChanged)
     }
 
+    /// Binds viewModel `Observables` to `Self`
     private func bind(to viewModel: TrendingRepoListViewModelInputOutput) {
         viewModel.repos.observe(on: self) { [weak self] repos in
             guard let self = self, repos.count > 0 else { return }
             self.refreshControl.endRefreshing()
-            if (self.errorView != nil) {
-                self.errorView?.removeFromSuperview()
-            }
             self.updateItems()
         }
         viewModel.loading.observe(on: self) { [weak self] in self?.updateLoading($0) }
@@ -68,23 +66,27 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
         trendingRepoTableView.reloadData()
     }
 
+    /// Handles loading state of `loading` observable of `TrendingRepoListViewModel`
     private func updateLoading(_ loading: TrendingRepositoriesListViewModelLoading?) {
         switch loading {
         case .firstPage:
             view.showAnimatedGradientSkeleton()
-            updateItems()
         case .nextPage, .none:
             hideSkeletionAnimations()
-            updateItems()
         }
+        updateItems()
     }
 
+    /// Handles error state of `error` observable of `TrendingRepoListViewModel`
     private func showError(_ error: String) {
         guard !error.isEmpty else { return }
-        // we can hide refresh control here //
-        self.errorView = ErrorView.instanceFromNib()
-        self.errorView?.frame = self.view.frame
-        self.errorView?.delegate = self
+        // we can hide refresh control here if we want //
+        errorView = ErrorView.instanceFromNib()
+        errorView?.frame = self.view.frame
+        errorView?.delegate = self
+        errorView?.didRetry = { [weak self] in
+            self?.errorView = nil
+        }
         view.addSubview(errorView!)
     }
 
@@ -111,12 +113,7 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: TrendingRepositoryTableViewCell.reuseIdentifier, for: indexPath) as? TrendingRepositoryTableViewCell {
-            if viewModel.loading.value == .firstPage {
-                cell.contentView.showAnimatedGradientSkeleton()
-            } else {
-                cell.configureCell(data: viewModel.repos.value[indexPath.row])
-            }
-
+            viewModel.loading.value == .firstPage ? cell.contentView.showAnimatedGradientSkeleton() : cell.configureCell(data: viewModel.repos.value[indexPath.row])
             if indexPath.row == viewModel.repos.value.count - 1 {
                 viewModel.didLoadNextPage()
             }
@@ -128,9 +125,9 @@ final class TrendingRepoListViewController: UIViewController, UITableViewDelegat
     // MARK: - UITableView Delegate
 
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        // we dont want this behaviour when skeleton view is visible
         if viewModel.repos.value.count > 0 {
-            viewModel.repos.value[indexPath.row].isCollapsed.toggle()
-            trendingRepoTableView.reloadData()
+            viewModel.didSelectItem(at: indexPath.row)
         }
     }
 

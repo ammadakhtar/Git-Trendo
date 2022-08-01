@@ -7,7 +7,7 @@
 
 import XCTest
 
-class TrendingRepositoryTests: XCTestCase {
+final class TrendingRepositoryTests: XCTestCase {
     
     func testFetchTrendingRepositories_whenSuccessfullyFetchesTrendingRepos_reposArrayShouldHaveCountEqualToTwentySix_succeeds() {
         let config = NetworkConfigurableMock()

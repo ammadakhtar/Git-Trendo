@@ -1,5 +1,5 @@
 //
-//  GitTrendoUITests.swift
+//  TrendingRepoListViewControllerTests.swift
 //  Git-TrendoUITests
 //
 //  Created by Ammad Akhtar on 31/07/2022.
@@ -7,14 +7,14 @@
 
 import XCTest
 
-class GitTrendoUITests: XCTestCase {
+final class TrendingRepoListViewControllerTests: XCTestCase {
 
     override func setUp() {
         continueAfterFailure = false
         XCUIApplication().launch()
     }
 
-    func testActionButtonState_whenSongIsNotPlaying_whenTapped_thenButtonStateShouldChangeToPaused_passes() {
+    func testWhenViewControllerLoadsResponse_hasTableView_thatHasRepositoryCell_whenTapped_expands_passes() {
         let app = XCUIApplication()
         let tablesQuery = app.tables
         let repoCell = tablesQuery.cells[AccessibilityIdentifier.reopCellIdentifier].firstMatch

@@ -7,15 +7,13 @@
 
 import UIKit
 
-protocol TrendingReposListFlowCoordinatorDependencies  {
+protocol TrendingReposListFlowCoordinatorDependencies: AnyObject  {
     func makeTrendingReposListViewController() -> TrendingRepoListViewController
 }
 
 final class TrendingReposListFlowCoordinator {
     private weak var navigationController: UINavigationController?
     private let dependencies: TrendingReposListFlowCoordinatorDependencies
-
-    private weak var trendingReposListViewController: TrendingRepoListViewController?
 
     init(navigationController: UINavigationController,
          dependencies: TrendingReposListFlowCoordinatorDependencies) {
@@ -26,6 +24,5 @@ final class TrendingReposListFlowCoordinator {
     func start() {
         let viewController = dependencies.makeTrendingReposListViewController()
         navigationController?.pushViewController(viewController, animated: false)
-        trendingReposListViewController = viewController
     }
 }

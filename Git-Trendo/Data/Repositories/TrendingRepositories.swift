@@ -9,7 +9,11 @@ import Foundation
 
 final class TrendingRepositories: TrendingRepositoryProtocol {
 
+    // MARK: - Variables
+    
     private let dataTransferService: DataTransferService
+
+    // MARK: - Init
 
     init(dataTransferService: DataTransferService) {
         self.dataTransferService = dataTransferService
@@ -17,11 +21,22 @@ final class TrendingRepositories: TrendingRepositoryProtocol {
 
     // MARK: - TrendingRepositoryProtocol
 
+    /// Function to load trending Repos using `FetchTrendingRepositoriesTask`
+    ///
+    /// - Parameter page:
+    ///     `Int`.
+    /// - Parameter loadFromCache:
+    ///     `Bool`
+    /// - Parameter completion:
+    ///     `Result<Result<TrendingRepo, Error>`
+    ///
+    /// - Returns:
+    /// An optional value of `Cancellable` to cancel a task
     func fetchTrendingRepositories(page: Int,
                                    loadFromCache: Bool,
                                    completion: @escaping (Result<TrendingRepo, Error>) -> Void) -> Cancellable? {
         let task = FetchTrendingRepositoriesTask()
-        let requestDTO = TrendingRequestDTO(page: page)
+        let requestDTO = TrendingRequestDTO(page: page, q: "language=+sort:stars")
 
         let endpoint = APIEndpoints.getTrendingRepositories(with: requestDTO)
         task.networkTask = dataTransferService.request(with: endpoint, loadFromCache: loadFromCache) { result in

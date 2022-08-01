@@ -17,9 +17,6 @@ struct APIEndpoints {
                             "Accept": "application/vnd.github.v3+json",
                             "Content-Type": "application/json;charset=utf-8"
                         ],
-                        queryParametersEncodable: trendingRequestDTO,
-                        queryParameters: [
-                            "q": "language=+sort:stars"
-                        ])
+                        queryParametersEncodable: trendingRequestDTO)
     }
 }

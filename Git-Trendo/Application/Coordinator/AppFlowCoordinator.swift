@@ -14,17 +14,14 @@ final class AppFlowCoordinator: Coordinator {
 
     init(navigationController: UINavigationController, appDIContainer: AppDIContainer) {
         self.navigationController = navigationController
-        self.navigationController.navigationBar.prefersLargeTitles = true
-        self.navigationController.navigationItem.largeTitleDisplayMode = .automatic
-        self.navigationController.navigationBar.sizeToFit()
         self.appDIContainer = appDIContainer
     }
 
     // Starts the flow of the application
     func start() {
         let trendingReposDIContainer = appDIContainer.makeTrendingRepoListDIContainer()
-        let trendingReposVIewController = trendingReposDIContainer.makeTrendingRepoListViewController()
-        navigationController.pushViewController(trendingReposVIewController, animated: true)
+        let flow = trendingReposDIContainer.makeTrendingRepoListFlowCoordinator(navigationController: navigationController)
+        flow.start()
     }
 
     // pops ViewController

@@ -20,6 +20,7 @@ final class ErrorView: UIView {
     @IBOutlet weak var retryButton: UIButton!
 
     weak var delegate: ErrorViewDelegate?
+    var didRetry: (() -> Void)?
 
     // MARK: - Init
 
@@ -50,5 +51,6 @@ final class ErrorView: UIView {
     @IBAction func retryButtonTapped() {
         delegate?.retryButtonTapped()
         self.removeFromSuperview()
+        didRetry?()
     }
 }

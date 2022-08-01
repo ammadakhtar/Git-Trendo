@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		49B2D92D4E37981DB3E9806F /* Pods_Git_Trendo_Git_TrendoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F288E5A6209562525AC8D8E /* Pods_Git_Trendo_Git_TrendoUITests.framework */; };
 		56DBA934FB3651A747616B05 /* Pods_Git_TrendoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A245B83E021C3FC23244ADED /* Pods_Git_TrendoTests.framework */; };
-		6C04E6A02896065A004A1BAC /* GitTrendoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04E69F2896065A004A1BAC /* GitTrendoUITests.swift */; };
+		6C04E6A02896065A004A1BAC /* TrendingRepoListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04E69F2896065A004A1BAC /* TrendingRepoListViewControllerTests.swift */; };
 		6C04E6A328960783004A1BAC /* AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04E6A228960783004A1BAC /* AccessibilityIdentifier.swift */; };
 		6C04E6A4289607BF004A1BAC /* TrendingRepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8AB22894248A00486E42 /* TrendingRepositoryTableViewCell.swift */; };
 		6C04E6A5289607F7004A1BAC /* AccessibilityIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C04E6A228960783004A1BAC /* AccessibilityIdentifier.swift */; };
@@ -55,7 +55,6 @@
 		6C9B4B4E28953E3600F9DE1F /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B4B4D28953E3600F9DE1F /* ErrorView.xib */; };
 		6C9B4B5028953EDD00F9DE1F /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B4B4F28953EDD00F9DE1F /* ErrorView.swift */; };
 		6C9B4B542895516D00F9DE1F /* lottie_badNetwork.json in Resources */ = {isa = PBXBuildFile; fileRef = 6C9B4B532895516D00F9DE1F /* lottie_badNetwork.json */; };
-		6C9B4B562895541F00F9DE1F /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6C9B4B552895541F00F9DE1F /* UIView+Ext.swift */; };
 		6CEF8A332893C08500486E42 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A322893C08500486E42 /* AppDelegate.swift */; };
 		6CEF8A352893C08500486E42 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CEF8A342893C08500486E42 /* SceneDelegate.swift */; };
 		6CEF8A3C2893C08600486E42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6CEF8A3B2893C08600486E42 /* Assets.xcassets */; };
@@ -114,7 +113,7 @@
 		11E8E7296ED77D0452D8BA4B /* Pods-Git-Trendo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-Trendo.release.xcconfig"; path = "Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo.release.xcconfig"; sourceTree = "<group>"; };
 		1F288E5A6209562525AC8D8E /* Pods_Git_Trendo_Git_TrendoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Git_Trendo_Git_TrendoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58CF12DCD4117B184BE16A49 /* Pods-Git-Trendo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Git-Trendo.debug.xcconfig"; path = "Target Support Files/Pods-Git-Trendo/Pods-Git-Trendo.debug.xcconfig"; sourceTree = "<group>"; };
-		6C04E69F2896065A004A1BAC /* GitTrendoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GitTrendoUITests.swift; sourceTree = "<group>"; };
+		6C04E69F2896065A004A1BAC /* TrendingRepoListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRepoListViewControllerTests.swift; sourceTree = "<group>"; };
 		6C04E6A228960783004A1BAC /* AccessibilityIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityIdentifier.swift; sourceTree = "<group>"; };
 		6C3BF14928959FD10010882D /* NetworkConfigurableMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurableMock.swift; sourceTree = "<group>"; };
 		6C3BF14C2895A01E0010882D /* NetworkSessionManagerMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManagerMock.swift; sourceTree = "<group>"; };
@@ -133,7 +132,6 @@
 		6C9B4B4D28953E3600F9DE1F /* ErrorView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
 		6C9B4B4F28953EDD00F9DE1F /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 		6C9B4B532895516D00F9DE1F /* lottie_badNetwork.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = lottie_badNetwork.json; sourceTree = "<group>"; };
-		6C9B4B552895541F00F9DE1F /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
 		6CEF8A2F2893C08500486E42 /* Git-Trendo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Git-Trendo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6CEF8A322893C08500486E42 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6CEF8A342893C08500486E42 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -307,7 +305,6 @@
 			isa = PBXGroup;
 			children = (
 				6C9B4B48289522CC00F9DE1F /* NibLoadableView+TableView.swift */,
-				6C9B4B552895541F00F9DE1F /* UIView+Ext.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -377,7 +374,7 @@
 			children = (
 				6CEF8A532893C08600486E42 /* Git_TrendoUITests.swift */,
 				6CEF8A552893C08600486E42 /* Git_TrendoUITestsLaunchTests.swift */,
-				6C04E69F2896065A004A1BAC /* GitTrendoUITests.swift */,
+				6C04E69F2896065A004A1BAC /* TrendingRepoListViewControllerTests.swift */,
 			);
 			path = "Git-TrendoUITests";
 			sourceTree = "<group>";
@@ -387,9 +384,9 @@
 			children = (
 				6CEF8A322893C08500486E42 /* AppDelegate.swift */,
 				6CEF8A342893C08500486E42 /* SceneDelegate.swift */,
+				6CEF8AAD289415B200486E42 /* AppConfigurations.swift */,
 				6CEF8A692893C26300486E42 /* Coordinator */,
 				6CEF8A6A2893C26D00486E42 /* DIContainer */,
-				6CEF8AAD289415B200486E42 /* AppConfigurations.swift */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -898,7 +895,6 @@
 				6CEF8A982893EF6200486E42 /* FetchTrendingRepositoriesUseCase.swift in Sources */,
 				6CEF8A862893E44200486E42 /* TrendingRepositories.swift in Sources */,
 				6CEF8A702893C2D200486E42 /* AppFlowCoordinator.swift in Sources */,
-				6C9B4B562895541F00F9DE1F /* UIView+Ext.swift in Sources */,
 				6CEF8AAE289415B200486E42 /* AppConfigurations.swift in Sources */,
 				6C9B4B49289522CC00F9DE1F /* NibLoadableView+TableView.swift in Sources */,
 				6CEF8A7F2893D4D100486E42 /* TrendingRepo.swift in Sources */,
@@ -967,7 +963,7 @@
 			files = (
 				6C04E6A828960B5C004A1BAC /* Repo.swift in Sources */,
 				6CEF8A542893C08600486E42 /* Git_TrendoUITests.swift in Sources */,
-				6C04E6A02896065A004A1BAC /* GitTrendoUITests.swift in Sources */,
+				6C04E6A02896065A004A1BAC /* TrendingRepoListViewControllerTests.swift in Sources */,
 				6C04E6A5289607F7004A1BAC /* AccessibilityIdentifier.swift in Sources */,
 				6C04E6A4289607BF004A1BAC /* TrendingRepositoryTableViewCell.swift in Sources */,
 				6C04E6A728960B52004A1BAC /* TrendingRepositoriesListItemViewModel.swift in Sources */,

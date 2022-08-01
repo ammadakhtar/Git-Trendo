@@ -15,7 +15,11 @@ protocol FetchTrendingRepositoryUseCaseProtocol: AnyObject {
 
 final class FetchTrendingRepositoryUseCase: FetchTrendingRepositoryUseCaseProtocol {
 
+    // MARK: - Vairables
+    
     private let trendingRepository: TrendingRepositoryProtocol
+
+    // MARK: - Init
 
     init(repository: TrendingRepositoryProtocol) {
         trendingRepository = repository
@@ -23,6 +27,17 @@ final class FetchTrendingRepositoryUseCase: FetchTrendingRepositoryUseCaseProtoc
 
     // MARK: - FetchTrendingRepositoryUseCaseProtocol
 
+    /// Function to load trending Repos using `TrendingRepository`
+    ///
+    /// - Parameter requestvalue:
+    ///     `FetchTrendingRepositoryUseCaseRequestValue`.
+    /// - Parameter loadFromCache:
+    ///     `Bool`
+    /// - Parameter completion:
+    ///     `Result<Result<TrendingRepo, Error>`
+    ///
+    /// - Returns:
+    /// An optional value of `Cancellable` to cancel a task
     func execute(requestvalue: FetchTrendingRepositoryUseCaseRequestValue,
                  loadFromCache: Bool,
                  completion: @escaping (Result<TrendingRepo, Error>) -> Void) -> Cancellable? {

@@ -9,4 +9,5 @@ import Foundation
 
 struct TrendingRequestDTO: Encodable {
     let page: Int     // we could have done something like this to construct our request
+    let q: String
 }

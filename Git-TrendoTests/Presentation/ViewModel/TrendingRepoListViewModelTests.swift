@@ -7,12 +7,16 @@
 
 import XCTest
 
-class FetchTrendingRepositoriesUseCaseMock: FetchTrendingRepositoryUseCaseProtocol {
+final class FetchTrendingRepositoriesUseCaseMock: FetchTrendingRepositoryUseCaseProtocol {
     var expectation: XCTestExpectation?
+    var error: Error?
     func execute(requestvalue: FetchTrendingRepositoryUseCaseRequestValue, loadFromCache: Bool, completion: @escaping (Result<TrendingRepo, Error>) -> Void) -> Cancellable? {
         let trendingRepos = TrendingRepoListViewModelTests().trendingRepos
-        let result: Result<TrendingRepo, Error> = .success(trendingRepos)
-        completion(result)
+        if let error = error {
+            completion(.failure(error))
+        } else {
+            completion(.success(trendingRepos))
+        }
         expectation?.fulfill()
         return nil
     }
@@ -24,7 +28,7 @@ final class TrendingRepoListViewModelTests: XCTestCase {
         return trendingRepos!
     }()
 
-    private enum SearchMoviesUseCaseError: Error {
+    private enum SearchTrendingReposUseCaseError: Error {
         case someError
     }
 
@@ -61,5 +65,19 @@ final class TrendingRepoListViewModelTests: XCTestCase {
         waitForExpectations(timeout: 5, handler: nil)
         XCTAssertEqual(viewModel.currentPage, 2)
         XCTAssertTrue(viewModel.hasMorePages)
+    }
+
+    func test_whenFetchTrendingRepositoriesUseCaseReturnsError_thenViewModelContainsError() {
+        // given
+        let fetchTrendningRepositoriesUseCaseMock = FetchTrendingRepositoriesUseCaseMock()
+        fetchTrendningRepositoriesUseCaseMock.expectation = self.expectation(description: "contain errors")
+        fetchTrendningRepositoriesUseCaseMock.error = SearchTrendingReposUseCaseError.someError
+        let viewModel = TrendingRepoListViewModel(trendingRepositioriesUsecase: fetchTrendningRepositoriesUseCaseMock)
+        // when
+        viewModel.viewDidLoad()
+
+        // then
+        waitForExpectations(timeout: 5, handler: nil)
+        XCTAssertNotNil(viewModel.error)
     }
 }
